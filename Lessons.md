@@ -13,3 +13,12 @@ for($i=2; $position -le 251; $i++){
     $position++;
    }
 }
+
+#factoriel
+[int]$inputNumber= Read-Host "Моля въведете стойност: ";
+$result=0;
+$result=($inputNumber)*($inputNumber-1);
+for($i=$inputNumber-2; $i -gt 0; $i--){
+    $result=$result*$i;
+}
+Write-Host $result;
